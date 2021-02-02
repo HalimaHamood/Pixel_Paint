@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pixel_Paint</title>
+  </head>
+  <body>
+    <!-- Project #2: Pixel Paint
+User Story:
+The user can see an 18x18 grid.
+When the user clicks on one of the boxes in the Grid the color changes.
+Below the grid is a color picker input.
+The user can select a color and when they click on the box the color they selected is what is generated.
+BONUS: Allow the user to decide the size of the grid. The default is 18x18 but they can make it bigger or smaller.
+Project due date: 8th of February -->
+    <h1>Pixel_Paint</h1>
+    <br />
+
+    <h3>Choose Grid Size</h3>
+    <form class="grid-size">
+      Grid Height:
+      <input type="number" class="input-height" min="1" max="50" value="18" />
+      <br />
+      <br />
+      Grid Width:
+      <input type="number" class="input-width" min="1" max="50" value="18" />
+      <br />
+      <br />
+      <input type="submit" class="input-submit" value="submit" />
+    </form>
+
+    <h3>Pick a Color</h3>
+    <input type="color" class="color-picker" />
+    <br />
+
+    <table class="grid-canvas"></table>
+
+    <!-- embeded js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
