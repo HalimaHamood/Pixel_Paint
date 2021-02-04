@@ -22,10 +22,12 @@ h3 {
   height: 30px;
   font-size: medium;
   font-family: cursive;
+  cursor: pointer;
 }
 
 .color-picker {
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 table,
@@ -36,6 +38,7 @@ td {
 
 .grid-canvas {
   background-color: white;
+  cursor: pointer;
 }
 
 /* 'border-collapse' CSS property specifies whether a table's cells have shared or separate borders; 'collapse' value causes cells to have shared borders */

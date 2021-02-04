@@ -37,6 +37,29 @@ gridSize.addEventListener('submit',function(e){
 });
 
 
+// To make the paint dragging
+let down=false;
+canvas.addEventListener('mousedown',function(e){
+    down=true;
+    canvas.addEventListener('mouseup', function(){
+        down=false;
+    });
+    // cells won't be colored if grid is left while 
+    // pointer is held down
+    canvas.addEventListener('mouseleave', function(){
+        down=false;
+    });
+
+    canvas.addEventListener('mouseover', function(e){
+        const color= document.querySelector('.color-picker').value;
+        if (down){
+            if(e.target.tagName=== 'TD'){
+                e.target.style.backgroundColor=color;
+            }
+        }
+    });
+});
+
 
 makeGrid(18,18);
 
